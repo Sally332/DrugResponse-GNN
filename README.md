@@ -13,11 +13,6 @@ It integrates **multi-omic molecular features**, **drug descriptors**, and **pri
 The framework emphasizes **cross-panel generalization** (e.g., CCLE → GDSC), addressing a persistent gap in pharmacogenomics where models often fail to transfer across datasets.
 
 ---
-## ❓ What can you learn with this framework?
-
-This project tests whether graph-based, pathway-bottleneck models can generalize across pharmacogenomic panels.  
-Specifically: **Can we train on CCLE or CTRP and still predict drug response in GDSC or NCI-60 while keeping the model interpretable?**  
-The framework aims to identify conserved pathway drivers of drug sensitivity rather than dataset-specific signatures.
 
 ## Architecture
 <img width="940" height="457" alt="drugresponse_gnn_architecture" src="https://github.com/user-attachments/assets/21239a41-9232-425c-9226-0fc1068eda10" />
@@ -44,14 +39,7 @@ The architecture includes:
 ---
 
 ## Datasets
-This repo is designed for integration across **multiple pharmacogenomic resources**:  
-- **CellMinerCDB**: harmonized access to NCI-60, GDSC, CTRP, CCLE  
-- **GDSC (Genomics of Drug Sensitivity in Cancer)**  
-- **CCLE (Cancer Cell Line Encyclopedia)**  
-- **CTRP (Cancer Therapeutics Response Portal)**  
-- **NCI-60**  
-
-Each panel provides drug sensitivity measures linked to molecular profiles. Cross-panel benchmarking ensures generalization and robustness.
+DrugResponse-GNN draws on established pharmacogenomic resources, including CCLE, CTRP, GDSC, NCI-60, and CellMinerCDB. These datasets provide complementary molecular and drug response profiles, offering a foundation for training, testing, and external validation of cross-panel prediction performance.
 
 ---
 
@@ -67,6 +55,8 @@ Each panel provides drug sensitivity measures linked to molecular profiles. Cros
   - Attribution consistency across datasets  
   - Identification of mechanistically consistent subnetworks  
 
+Alongside prediction, the framework is explicitly designed to highlight conserved pathway-level mechanisms of drug sensitivity across panels, with attributions sanity.
+
 ---
 
 ## Roadmap
@@ -76,6 +66,11 @@ Each panel provides drug sensitivity measures linked to molecular profiles. Cros
 - [ ] Benchmark across CCLE, GDSC, CTRP, NCI-60  
 - [ ] Test generalization to unseen drugs and cell lines  
 - [ ] Release reproducible analysis notebooks  
+
+---
+
+## Extensibility
+Beyond the current GNN–KPNN hybrid, the encoder can be replaced with transformer backbones or pretrained embeddings from foundation-scale biology models such as Geneformer, scGPT, or ESM. The aim is to preserve interpretability through pathway bottlenecks while taking advantage of the scalability and representation power of foundation models.
 
 ---
 
