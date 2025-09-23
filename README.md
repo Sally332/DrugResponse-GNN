@@ -1,4 +1,7 @@
 # DrugResponse-GNN
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 **Cross-Panel Pathway-Bottleneck Graph Neural Networks for Drug Sensitivity Prediction**
 
 ---
