@@ -13,6 +13,11 @@ It integrates **multi-omic molecular features**, **drug descriptors**, and **pri
 The framework emphasizes **cross-panel generalization** (e.g., CCLE → GDSC), addressing a persistent gap in pharmacogenomics where models often fail to transfer across datasets.
 
 ---
+## ❓ What can you learn with this framework?
+
+This project tests whether graph-based, pathway-bottleneck models can generalize across pharmacogenomic panels.  
+Specifically: **Can we train on CCLE or CTRP and still predict drug response in GDSC or NCI-60 while keeping the model interpretable?**  
+The framework aims to identify conserved pathway drivers of drug sensitivity rather than dataset-specific signatures.
 
 ## Architecture
 <img width="940" height="457" alt="drugresponse_gnn_architecture" src="https://github.com/user-attachments/assets/21239a41-9232-425c-9226-0fc1068eda10" />
