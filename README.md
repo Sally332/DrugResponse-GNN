@@ -69,10 +69,10 @@ Beyond the current GNN–KPNN hybrid, the encoder can be replaced with transform
 ---
 ## References
 
-1. Reinhold WC *et al.* *CellMinerCDB: a relational database for pharmacogenomics.* **Cancer Research** (2019).  
-2. Barretina J *et al.* *The Cancer Cell Line Encyclopedia (CCLE).* **Nature** (2012).  
-3. Yang W *et al.* *Genomics of Drug Sensitivity in Cancer (GDSC).* **Nucleic Acids Research** (2013).  
-4. Seashore-Ludlow B *et al.* *CTRP.* **Cell** (2015).  
+1. Reinhold WC *et al.* *CellMinerCDB: a relational database for pharmacogenomics.* Cancer Research (2019).  
+2. Barretina J *et al.* *The Cancer Cell Line Encyclopedia (CCLE).* Nature (2012).  
+3. Yang W *et al.* *Genomics of Drug Sensitivity in Cancer (GDSC).* Nucleic Acids Research (2013).  
+4. Seashore-Ludlow B *et al*. *CTRP.* Cell (2015).  
 5. Yepes S. *MM-KPNN and SpatialMMKPNN* GitHub Repositories (2025).
 
 ---
